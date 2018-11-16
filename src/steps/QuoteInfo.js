@@ -26,62 +26,7 @@ let QuoteInfo = React.createClass({
     let rows = getPaymentRows(payments)
     return <div>
       <div className="panel-body">
-        <p>Congratulations! You’ve just taken the first step toward securing your loved ones’ financial future. Your life insurance quote is below. What’s next? Forward your quote to one of our experienced agents who will walk you through the application process.</p>
-        <Row>
-          <Col sm={6}>
-            <h3>Your Information</h3>
-            <Table bordered>
-              <tbody>
-                <tr>
-                  <th>Gender</th>
-                  <td>{Genders[generalInfo.gender].title}</td>
-                </tr>
-                <tr>
-                  <th>Age</th>
-                  <td>{generalInfo.age}</td>
-                </tr>
-                <tr>
-                  <th>State</th>
-                  <td>{States[generalInfo.stateCode].abbreviation}</td>
-                </tr>
-                <tr>
-                  <th>Tobacco Use</th>
-                  <td>{generalInfo.tobacco ? 'Smoker' : 'Non Smoker'}</td>
-                </tr>
-                <tr>
-                  <th>Amount of coverage</th>
-                  <td>{formatDollars(generalInfo.coverage)}</td>
-                </tr>
-                <tr>
-                  <th>Type of coverage</th>
-                  <td>{ProductCodes[generalInfo.productCode].name}</td>
-                </tr>
-                <tr>
-                  <th>Underwriting class</th>
-                  <td>{HealthCodes[generalInfo.healthCode].title}</td>
-                </tr>
-              </tbody>
-            </Table>
-          </Col>
-          <Col sm={6}>
-            <h3>Term</h3>
-            <Table bordered>
-              <thead>
-                <tr>
-                  {rows.header}
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  {rows.annual}
-                </tr>
-                <tr>
-                  {rows.monthly}
-                </tr>
-              </tbody>
-            </Table>
-          </Col>
-        </Row>
+
       </div>
       <div className="panel-footer">
         <Row>
